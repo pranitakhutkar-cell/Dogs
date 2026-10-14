@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog World</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #fff8e7;
+            color: #333;
+            text-align: center;
+        }
+
+        header {
+            background-color: orange;
+            color: white;
+            padding: 25px;
+        }
+
+        nav {
+            background-color: #5c4033;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: orange;
+        }
+
+        section {
+            background-color: white;
+            margin: 20px;
+            padding: 25px;
+            border-radius: 12px;
+        }
+
+        img {
+            width: 300px;
+            max-width: 90%;
+            border-radius: 12px;
+        }
+
+        ul {
+            display: inline-block;
+            text-align: left;
+            line-height: 2;
+        }
+
+        button {
+            background-color: orange;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: darkorange;
+        }
+
+        footer {
+            background-color: #5c4033;
+            color: white;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🐶 Dog World</h1>
+        <p>Dogs are our best friends!</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#breeds">Breeds</a>
+        <a href="#care">Dog Care</a>
+    </nav>
+
+    <section id="home">
+        <h2>Welcome to Dog World!</h2>
+        <p>Dogs are friendly, loyal, and loving animals.</p>
+
+        <img
+            src="https://images.unsplash.com/photo-1552053831-71594a27632d?w=600"
+            alt="Cute Golden Retriever">
+
+        <br><br>
+
+        <button onclick="showMessage()">Click Me!</button>
+
+        <p id="message"></p>
+    </section>
+
+    <section id="breeds">
+        <h2>Popular Dog Breeds</h2>
+
+        <ul>
+            <li>Golden Retriever</li>
+            <li>German Shepherd</li>
+            <li>Labrador Retriever</li>
+            <li>Beagle</li>
+            <li>Pug</li>
+        </ul>
+    </section>
+
+    <section id="care">
+        <h2>How to Care for Dogs</h2>
+
+        <p>🐾 Give them healthy food.</p>
+        <p>🐾 Provide clean drinking water.</p>
+        <p>🐾 Take them for daily walks.</p>
+        <p>🐾 Keep them clean and healthy.</p>
+        <p>🐾 Give them love and attention.</p>
+    </section>
+
+    <footer>
+        <p>© 2026 Dog World | Made with ❤️</p>
+    </footer>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").innerHTML =
+                "🐶 Dogs make our lives happier! Give them lots of love! ❤️";
+        }
+    </script>
+
+</body>
+</html>
